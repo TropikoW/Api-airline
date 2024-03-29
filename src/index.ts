@@ -2,7 +2,7 @@
 import express from 'express'
 
 // importa el archivo que contiene las rutas de la aplicacion
-import diaryRouter from './routes/_diaries'
+import diaryRouter from './routes/diaries'
 
 // crea una instancia de express
 const app = express()
@@ -15,7 +15,7 @@ const PORT = 3000
 
 // crea una ruta de prueba para verificar que el servidor esta funcionando
 app.get('/ping', (_req, res) => {
-  console.log('ping' + ' ' + new Date().toLocaleDateString())
+  console.log('someone pinged here')
   res.send('pong ' + new Date().toLocaleDateString())
 })
 
