@@ -24,5 +24,5 @@ app.use('/api/diaries', diaryRouter)
 
 // inicia el servidor en el puerto establecido
 app.listen(PORT, () => {
-  console.log(`Server is running ${PORT}`)
+  console.log(`Server is running on PORT ${PORT}`)
 })
